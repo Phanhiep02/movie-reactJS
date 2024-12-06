@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.active {
+  /* color: red; */
+}
+@layer base {
+  .btn {
+    @apply border-2 py-3 text-lg px-9  flex items-center justify-center rounded-full;
+  }
+}
+.swiper-slide .swiper-slide {
+  margin-right: 0;
+}
