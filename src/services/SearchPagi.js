@@ -11,14 +11,13 @@ export const getMovies = async ({ page = 2, q = "" } = {}) => {
       const response = await axios.get(
         `${BASE_URL}/search/movie?api_key=${API_KEY}&language=en&page=${page}${queryString}`
       );
-      console.log("query", response.data);
 
       return response.data;
     } else {
       const response = await axios.get(
         `${BASE_URL}/movie/popular?api_key=${API_KEY}&language=en&page=${page}`
       );
-      console.log("default", response.data);
+
       return response.data;
     }
   } catch (error) {

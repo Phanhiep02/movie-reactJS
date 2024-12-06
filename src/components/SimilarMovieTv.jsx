@@ -14,9 +14,7 @@ export default function SimilarMovieTv({ id }) {
   useEffect(() => {
     getSimilar();
   }, [id]);
-  const onClickSimilar = () => {
-    window.scrollTo(0, 0);
-  };
+
   return (
     <>
       <div className="container mx-auto mt-10">
@@ -48,7 +46,9 @@ export default function SimilarMovieTv({ id }) {
                     key={trending.id}
                   >
                     <Link
-                      onClick={onClickSimilar}
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                      }}
                       to={`/tv-series/${trending.id}`}
                       style={{ width: "200px" }}
                     >

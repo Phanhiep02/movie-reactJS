@@ -23,10 +23,6 @@ export default function HeroTrending() {
   const genres = trendingMovie?.genres;
   const casts = trendingCasts?.cast?.slice(0, 7);
 
-  const img =
-    "https://image.tmdb.org/t/p/original/yh64qw9mgXBvlaWDi7Q9tpUBAvH.jpg";
-  const bg =
-    "https://image.tmdb.org/t/p/original/tElnmtQ6yz1PjN1kePNl8yMSb59.jpg";
   return (
     <>
       <div>
@@ -38,12 +34,9 @@ export default function HeroTrending() {
             filter: "blur(3px)",
           }}
         ></div>
-        <div
-          // style={{ top: "230px" }}
-          className="absolute lg:top-[108px] top-[70px] lg:gap-24  left-0 container mx-auto grid lg:gird-cols-12 grid-cols-12 place-items-center "
-        >
+        <div className="absolute lg:top-[108px] top-[70px] lg:gap-24  left-0 container mx-auto grid lg:gird-cols-12 grid-cols-12  ">
           <div
-            className=" gird lg:col-start-3 lg:col-span-3 md:block hidden col-span-12"
+            className=" gird lg:col-start-3 lg:col-span-3 md:block hidden col-span-12  col-start-5"
             style={{ width: "270px", height: "470px" }}
           >
             <img
@@ -52,11 +45,11 @@ export default function HeroTrending() {
               alt=""
             />
           </div>
-          <div className="grid lg:col-span-6 w-[500px] col-start-4 col-span-8">
-            <h2 style={{ fontWeight: "600" }} className="text-5xl mb-2 ">
+          <div className="grid lg:col-span-6  md:w-[600px] w-[365px] ">
+            <h2 style={{ fontWeight: "600" }} className="text-5xl mb-2  w-full">
               {trendingMovie.original_title}
             </h2>
-            <div className="flex gap-2 mb-3">
+            <div className="flex gap-2 mb-3 md:w-[600px] w-[365px]">
               {genres?.map(({ name, id }) => {
                 return (
                   <div

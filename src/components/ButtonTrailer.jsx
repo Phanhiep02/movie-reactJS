@@ -8,10 +8,16 @@ import { Link } from "react-router-dom";
 
 const style = {
   position: "absolute",
-  top: "50%",
+  top: {
+    xs: "35%",
+    md: "50%",
+  },
   left: "50%",
   transform: "translate(-50%, -50%)",
-  width: 700,
+  width: {
+    xs: 400,
+    md: 700,
+  },
   height: 500,
   bgcolor: "#000",
   border: "2px solid #333",

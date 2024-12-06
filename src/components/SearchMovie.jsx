@@ -16,21 +16,21 @@ export default function SearchMovie({ onSearch, query }) {
 
   return (
     <>
-      <div className="container mx-auto pb-20 ">
-        <input
-          onChange={handleInputChange}
-          className="rounded-full pl-3 pr-9 outline-none bg-black py-1"
-          type="search"
-          placeholder="Search "
-          style={{ width: "300px" }}
-          // value={query}
-        />
-        <button
-          style={{ left: "-20px" }}
-          className="relative rounded-full bg-red-500 w-24 py-1"
-        >
-          Search
-        </button>
+      <div className="  container mx-auto pb-20 ">
+        <div className="relative" style={{ width: "300px" }}>
+          <input
+            onChange={handleInputChange}
+            className=" rounded-full w-full pl-3 pr-12 outline-none bg-black py-1"
+            type="search"
+            placeholder="Search "
+          />
+          <button
+            style={{ right: 0 }}
+            className="absolute  rounded-full bg-red-500 w-24 py-1"
+          >
+            Search
+          </button>
+        </div>
       </div>
     </>
   );

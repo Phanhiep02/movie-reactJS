@@ -46,24 +46,24 @@ export default function ListTv() {
   return (
     <>
       {/* SEARCH */}
-      <div className="container mx-auto pb-20 ">
-        <input
-          onChange={onChangeValueSearch}
-          className="rounded-full pl-3 pr-9 outline-none bg-black py-1"
-          type="search"
-          placeholder="Search "
-          style={{ width: "300px" }}
-          value={query === "" ? keyword : query}
-        />
-        <button
-          style={{ left: "-20px" }}
-          className="relative rounded-full bg-red-500 w-24 py-1"
-        >
-          Search
-        </button>
+      <div className="  container mx-auto pb-20 ">
+        <div className="relative" style={{ width: "300px" }}>
+          <input
+            onChange={onChangeValueSearch}
+            className=" rounded-full w-full pl-3 pr-12 outline-none bg-black py-1"
+            type="search"
+            placeholder="Search "
+          />
+          <button
+            style={{ right: 0 }}
+            className="absolute  rounded-full bg-red-500 w-24 py-1"
+          >
+            Search
+          </button>
+        </div>
       </div>
       {/* list */}
-      <div className="container mx-auto flex gap-x-2 gap-y-5 flex-wrap">
+      <div className="container mx-auto flex lg:gap-x-2 md:gap-x-10 gap-y-5 flex-wrap justify-center">
         {listTv?.map((tv, index) => {
           return (
             <div key={`${tv.id}-${index}`}>

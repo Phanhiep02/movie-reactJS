@@ -37,7 +37,7 @@ export default function HeroPopular() {
                 {/* hero */}
                 <div
                   style={{ top: "140px" }}
-                  className="absolute  text-white container mx-auto"
+                  className="absolute  text-white container mx-auto flex items-center justify-center"
                 >
                   <div className="grid md:grid-cols-12 grid-cols-12 gap-14">
                     <div className="grid md:col-span-6 col-span-12">

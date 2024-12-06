@@ -53,7 +53,7 @@ export default function ListMovie() {
   return (
     <>
       <SearchMovie query={query} onSearch={handleSearch}></SearchMovie>
-      <div className="container mx-auto flex gap-x-2 gap-y-5 flex-wrap">
+      <div className="container mx-auto flex lg:gap-x-2 md:gap-x-10 gap-y-5 flex-wrap justify-center">
         {trendingMovies?.map((movie) => (
           <div key={movie.id}>
             <Link to={`/movie/${movie.id}`}>

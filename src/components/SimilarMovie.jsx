@@ -14,10 +14,6 @@ export default function Similar({ id }) {
   useEffect(() => {
     getSimilar();
   }, [id]);
-  const onClickSimilar = () => {
-    window.scrollTo(0, 0);
-  };
-  console.log(similars);
 
   return (
     <>
@@ -48,7 +44,9 @@ export default function Similar({ id }) {
                     key={trending.id}
                   >
                     <Link
-                      onClick={onClickSimilar}
+                      onClick={() => {
+                        window.scrollTo(0, 0);
+                      }}
                       to={`/movie/${trending.id}`}
                       style={{ width: "200px" }}
                     >

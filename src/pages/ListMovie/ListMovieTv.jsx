@@ -13,7 +13,7 @@ export default function ListMovieTv() {
           className="relative w-full h-52 "
           style={{ backgroundImage: `url(${imgBg})`, top: "-60px" }}
         ></div>
-        <div className="absolute top-[24%] left-1/2 ">
+        <div className="absolute lg:top-[24%] md:top-[16%] top-[20%] left-[40%] md:left-1/2">
           {" "}
           <h1 className="text-center text-white text-2xl font-medium">
             Movies TV
