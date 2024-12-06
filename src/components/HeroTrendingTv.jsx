@@ -53,9 +53,8 @@ export default function HeroTrendingTv() {
               {genres?.map(({ name, id }) => {
                 return (
                   <div
-                    style={{ width: "140px" }}
                     key={id}
-                    className="text-lg border-2 border-white rounded-full w-24 h-10 cursor-default flex items-center justify-center bg-black "
+                    className="text-lg border-2 md:min-w-44 border-white rounded-full w-24 h-10 cursor-default flex items-center justify-center bg-black "
                   >
                     {name}
                   </div>

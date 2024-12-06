@@ -1,8 +1,7 @@
 import imgBg from "../../assets/img/footer-bg.jpg";
-import SearchMovie from "../../components/SearchMovie";
 
 import ListMovie from "../../components/ListMovie/ListMovie";
-import { getPopularMovie } from "../../services/MovieService";
+
 export default function ListMovieTrending() {
   return (
     <>
